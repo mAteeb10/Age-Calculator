@@ -1,0 +1,103 @@
+/* style.css */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a0914, #14049e, #0a0914);
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: #110f18;
+  margin: 0;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+label {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="date"]:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #9d96bd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #00008b;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Result styles */
+#age-result {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: bold;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: none; /* Hidden by default */
+}
+
+#age-result.visible {
+  opacity: 1;
+  display: block; /* Make the result visible when 'visible' class is added */
+}
